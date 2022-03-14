@@ -1,0 +1,532 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body { /* fondo del sitio */
+    background-color: rgb(255, 255, 255);
+}
+
+header { /* estilo del header */
+    background-image: linear-gradient(to right, cyan, deeppink);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+li { /* estilo del menu nav */
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    border: solid 1px rgb(241, 97, 97);
+}
+
+li:hover { /* estilo del nav en hover */
+    border-left: solid 5px pink;
+    background-color: rgb(238, 29, 29);
+}
+
+.pruebaMargen { /* margen de elementos del home */
+    margin-left: 70px;
+    padding: 10px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+p { /* color del texto */
+    color: rgb(0, 0, 0);
+}
+
+
+main h1,h2,h3{ /* color de titulos */
+    color:orangered
+}
+
+h3 { /* estilo de titulos */
+    text-align: center;
+}
+
+nav {  /* estilo del menu */
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    padding: 50px;
+}
+
+footer { /* estilo del footer */
+    background-color: rgb(221, 216, 216);
+    text-align: center;
+    padding: 20px;
+    color: black;
+}
+
+.amaz1 { /* estilo imagen de pag. nosotros "prod.geniales" */
+    border-radius: 40px;
+    border:solid 10px rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+}
+
+.amaz2 { /* estilo imagen de pag. nosotros "smartwatches" */
+    border-radius: 40px;
+    border:solid 10px rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+}
+
+.amaz3 { /* estilo imagen de pag. nosotros " entrega 24 hrs" */
+    border-radius: 40px;
+    border:solid 10px rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+
+}
+
+.amaz4 { /* estilo imagen de pag. nosotros "cuotas sin intereses" */
+    border-radius: 40px;
+    border:solid 10px rgb(255, 255, 255);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 200px;
+
+}
+
+
+section article p { /* estilo de texto de pag. nosotros */
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+section article img { /* estilo imagen de pag. nosotros*/
+    text-align: center;
+}
+
+section article h2 { /* estilo de texto h2 de pag. nosotros */
+    text-align: center;
+}
+
+section article h3 { /* estilo de texto h3 de pag. carrito,contacto,productos */
+    color: white
+}
+
+.cajaPrimera { /*seccion de  primera linea de imagenes del home*/
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+}
+
+.imagenesPrimera { /* primera linea de imagenes del home*/
+    background-color: rgb(255, 255, 255);
+    margin:5px 5px 5px 5px;
+    height: 250px;
+}
+
+.recibeloHoy { /*estilo del recibelo hoy*/
+    background-color: rgb(255, 255, 255);
+    height: 150px;
+}
+
+
+.cajaNosotros { /*Nosotros*/
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    margin-left: 50px;
+}
+
+
+.segundaLinea {
+    background-color: rgb(255, 255, 255);
+    margin:5px 5px 5px 5px;
+    height: 250px;
+}
+
+.headerFlex { /* estilo del header Benkio */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuFlex {
+    display:flex;
+    flex-direction: column;
+}
+
+
+.flexProductos {
+    display: flex;
+}
+
+.logoHeader { /* estilo del logo de la pagina */
+    width: 50px;
+    margin: 0 10px;
+}
+
+
+.titulo-animado {
+    animation-name: titulo;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-delay:0;
+}
+
+@keyframes titulo {
+    from {
+        transform: translateX(2000px);
+        opacity: 0;
+        color:deeppink;
+    }
+
+    to  {
+        transform: translateX(0px);
+        color: deeppink;
+
+    }
+}
+
+
+.caja-animada1 {
+    animation-name: caja1;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay:0;
+}
+
+@keyframes caja1 {
+    from {
+        transform: translateX(2000px);
+        opacity: 0;
+        color:rgb(0, 0, 0);
+    }
+
+    to  {
+        transform: translateX(0px);
+        color:deeppink;
+
+    }
+}
+
+#gridAreas {
+    display: grid;
+    grid-template-areas: 
+    "cabeza menu menu menu"/* fila 1 */
+    "productos productos productos productos"
+    "servicios servicios servicios servicios"/* fila 2 */
+    "pie pie pie pie"/* fila 3 */;
+
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 80px 300px 300px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.anchoFooter {
+    width: 100%;
+}
+
+#gridCarrito {
+    display: grid;
+    /* 3 columnas y 4 filas */
+    grid-template-areas: 
+    "cabeza menu menu"/* fila 1 */
+    "productos productos productos"
+    "productos productos productos"
+    "productos productos productos"/* fila 2 */
+    "pie pie pie"/* fila 3 */;
+
+    grid-template-columns: 20% 25% 20% 20%;
+    grid-template-rows: 1fr 5fr fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 20px;
+}
+
+#gridHome {
+    display: grid;
+    /* 3 columnas y 4 filas */
+    grid-template-areas: 
+    "cabeza menu menu menu"/* fila 1 */
+    "productos productos productos productos"
+    "servicios servicios servicios servicios"/* fila 2 */
+    "banners banners banners banners"
+    "destacados destacados destacados destacados"
+    "pie pie pie pie"/* fila 3 */;
+
+    grid-template-columns: 20% 25% 23.5% 20%;
+    grid-template-rows: 100px 400px 350px 100px 350px 100px;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+
+
+/*Nombrar cada area */
+header {
+    grid-area: cabeza;
+ }
+ footer {
+    grid-area: pie;
+ }
+ section#productos {
+    grid-area: productos;     
+ }
+ section#servicios {
+    grid-area: servicios;     
+ }
+
+ section#banners {
+    grid-area: banners;     
+ }
+
+ section#destacados {
+    grid-area: destacados;     
+ }
+
+ nav {
+    grid-area: menu;
+ }
+
+
+ a:link {
+    color: rgb(255, 255, 255);
+}
+a:hover {
+    color: rgb(0, 56, 241);
+}
+a:visited {
+    color: rgb(255, 245, 246);
+}
+img {
+    margin-left: 0;
+}
+
+
+
+ @media (min-width: 481px) and (max-width: 1023px) {
+
+    #gridHome {
+        display: grid;
+        /* 3 columnas y 4 filas */
+        grid-template-areas: 
+        "cabeza menu menu"/* fila 1 */
+        "productos productos productos"
+        "servicios servicios servicios"
+        "banners banners banners"
+        "destacados destacados destacados "/* fila 2 */
+        "pie pie pie"/* fila 3 */;
+    
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 120px 250px 250px 150px 300px;
+        grid-column-gap: 50px;
+        grid-row-gap: 50px;
+    }
+    
+    .menuFlex {
+
+        display:flex;
+        flex-direction: row;
+    
+    }
+  
+    li {
+        padding: 15px;
+        width: 100px;
+    }
+    li:hover {
+        border-left: solid 5px pink;
+        background-color: rgb(230, 77, 158);
+    }
+    
+    nav {
+        background-color: rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 0px;
+    }
+
+
+    .responsive {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .responsive2 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .pruebaMargen {
+        margin-left: 0px;
+        padding: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+
+    #gridAreas {
+        display: grid;
+        grid-template-areas: 
+        "cabeza menu menu"
+        "productos productos productos"
+        "servicios servicios servicios"
+        "pie pie pie";
+    
+        grid-template-columns: 150px 150px 150px ;
+        grid-template-rows: 100px 400px 450px ;
+        grid-column-gap: 50px;
+        grid-row-gap: 20px;
+    }
+
+    .responsiveCarritofooter {
+        width: 100%;
+    }
+    
+
+    .cajaNosotros { /*Nosotros*/
+        background-color: rgb(255, 255, 255);
+        height: 100px;
+        margin-left: 50px;
+    }
+    
+
+    #gridCarrito {
+        display: grid;
+        grid-template-areas: 
+        "cabeza menu menu"
+        "productos productos productos" 
+        "pie pie pie";
+    
+        grid-template-columns: 30% 35% 35%;
+        grid-template-rows: 100px 600px 100px;
+        grid-column-gap: 50px;
+        grid-row-gap: 40px;
+    }
+
+    .responsiveCarrito {
+        width: 100%;
+        height: 300px;
+        margin-left: 10px;
+    }
+    .responsiveCarritofooter {
+        width: 100%;
+    }
+ }
+
+/*# sourceMappingURL=estilos.css.map */
+
+
+
+
+@media (max-width: 480px) {
+  #gridHome {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "servicios" "banners" "destacados" "pie";
+    /* Tamaño */
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 70px 150px 1200px 50px 1700px 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+  }
+
+  .flexProductos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    padding: 5px;
+    justify-content: space-between;
+  }
+
+  nav {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 120px;
+  }
+
+  header {
+    text-align: center;
+    height: 100px;
+  }
+
+  .responsive {
+    width: 100%;
+    height: 300px;
+  }
+
+  .responsive2 {
+    width: 100%;
+    height: 100px;
+  }
+
+  .pruebaMargen {
+    margin-left: 0px;
+    padding: 10px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    height: 50px;
+  }
+
+  .responsiveMob {
+    display: inline-block;
+  }
+
+  article {
+    padding: -50px;
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  #gridCarrito {
+    display: grid;
+    /* 3 columnas y 4 filas */
+    grid-template-areas: "cabeza menu" "productos productos" "pie pie";
+    /* fila 3 */
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px 50px 350px;
+    grid-column-gap: 105px;
+    grid-row-gap: 30px;
+  }
+
+  .responsiveCarrito {
+    width: 100%;
+  }
+
+  .flexProductos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #gridAreas {
+    display: grid;
+    /* 3 columnas y 4 filas */
+    grid-template-areas: "cabeza" "menu" "productos" "servicios" "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px 1000px 1000px 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+  }
+
+  .anchoFooter {
+    width: 100%;
+  }
+}
+
+

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+@media (max-width: 480px) {
+  #gridHome {
+    display: grid;
+    grid-template-areas: "cabeza" "menu" "productos" "servicios" "banners" "destacados" "pie";
+    /* Tamaño */
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 70px 150px 1200px 50px 1700px 20px;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+  }
+
+  .flexProductos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    padding: 5px;
+    justify-content: space-between;
+  }
+
+  nav {
+    background-color: white;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 120px;
+  }
+
+  header {
+    text-align: center;
+    height: 100px;
+  }
+
+  .responsive {
+    width: 100%;
+    height: 300px;
+  }
+
+  .responsive2 {
+    width: 100%;
+    height: 100px;
+  }
+
+  .pruebaMargen {
+    margin-left: 0px;
+    padding: 10px;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    height: 50px;
+  }
+
+  .responsiveMob {
+    display: inline-block;
+  }
+
+  article {
+    padding: -50px;
+    margin: 10px;
+    justify-content: space-between;
+  }
+
+  #gridCarrito {
+    display: grid;
+    /* 3 columnas y 4 filas */
+    grid-template-areas: "cabeza menu" "productos productos" "pie pie";
+    /* fila 3 */
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 50px 50px 350px;
+    grid-column-gap: 105px;
+    grid-row-gap: 30px;
+  }
+
+  .responsiveCarrito {
+    width: 100%;
+  }
+
+  .flexProductos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #gridAreas {
+    display: grid;
+    /* 3 columnas y 4 filas */
+    grid-template-areas: "cabeza" "menu" "productos" "servicios" "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 50px 50px 1000px 1000px 50px;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+  }
+
+  .anchoFooter {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=destino.css.map */
